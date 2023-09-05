@@ -1,0 +1,33 @@
+Open AI Response for prompt: using open right and Python program to create a star using turtle 
+ *************************************
+
+To create a star using the `turtle` module in Python, you can use the following code:
+
+```python
+import turtle
+
+# Setup turtle
+window = turtle.Screen()
+window.bgcolor("black")
+
+star = turtle.Turtle()
+star.color("white")
+star.speed(10)
+
+# Draw star
+star.penup()
+star.goto(-50, 50)
+star.pendown()
+star.begin_fill()
+
+for _ in range(5):
+    star.forward(100)
+    star.right(144)
+
+star.end_fill()
+
+# Close turtle window
+window.mainloop()
+```
+
+This code will open a turtle graphics window and draw a white star on a black background. The `star.penup()` and `star.pendown()` commands are used to control the turtle's pen. The `star.begin_fill()` and `star.end_fill()` commands are used to fill the shape of the star with a white color. The `star.forward(100)` command moves the turtle forward by a specified distance, and the `star.right(144)` command rotates the turtle to the right by a specified angle.
